@@ -1,0 +1,41 @@
+intents:
+  - greet
+  - goodbye
+  - custom_intent
+  - inform
+  - ask_help
+
+entities:
+  - product
+  - location
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand that."
+
+  utter_custom_intent:
+    - text: "Custom intent detected! How can I help with that?"
+
+  utter_ask_help:
+    - text: "Sure, I'm here to assist you. Please let me know how I can help."
+
+  utter_inform_product:
+    - text: "Sure, I have noted the product: {product}. How can I assist you further?"
+
+  utter_inform_location:
+    - text: "Got it, your location is {location}. How can I assist you further?"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_default
+  - utter_custom_intent
+  - utter_ask_help
+  - utter_inform_product
+  - utter_inform_location
